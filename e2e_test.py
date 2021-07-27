@@ -16,6 +16,8 @@ driver.find_element_by_css_selector("a[href*='shop'").click()
 products = driver.find_elements_by_xpath("//div[@class='card h-100']")
 
 print(len(products))
+print("Hello world")
+print("Update scripts")
 
 for product in products:
     prod_name = product.find_element_by_xpath("div/h4/a").text
