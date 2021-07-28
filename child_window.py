@@ -27,19 +27,12 @@ print(driver.find_element_by_tag_name("h3").text)
 assert "Opening a new window" == driver.find_element_by_tag_name("h3").text
 
 
-def count_email_domain_v2():
-    domain_count = collections.defaultdict(lambda: 0)
-    with open('mails.txt', 'r') as f:
-        text = f.readlines()
-        for line in text:
-            domain = line.split('@')[-1]
-            domain_count[domain] += 1
+def test_open_childwindow():
+    pass
 
 
-def count_email_domain_v3():
-    email_list = []
-    with open('mails.txt', 'r') as f:
-        text = f.read().split('\n')
-        email_list.append(email for email in text)
+def test_popup():
+    pass
 
-    return email_list
+
+

@@ -65,18 +65,18 @@ print(sum_price)
 
 assert int(sum_price) == int(total_amount)
 
+# test updating codes
+driver.find_element_by_id("fromCity").click()
+driver.find_element_by_css_selector("input[placeholder='From']").send_keys("del")
+cities = driver.find_elements_by_css_selector("p[class*='blackText']")
 
-# driver.find_element_by_id("fromCity").click()
-# driver.find_element_by_css_selector("input[placeholder='From']").send_keys("del")
-# cities = driver.find_elements_by_css_selector("p[class*='blackText']")
-#
-# for city in cities:
-#     print(city.text)
-#
-#
-# for checkbox in checkboxes:
-#     print(checkbox.get_attribute("value"))
-#     if checkbox.get_attribute("value") == "option2":
-#         checkbox.click()
-#         assert checkbox.is_selected()
+for city in cities:
+    print(city.text)
+
+
+for checkbox in checkboxes:
+    print(checkbox.get_attribute("value"))
+    if checkbox.get_attribute("value") == "option2":
+        checkbox.click()
+        assert checkbox.is_selected()
 

@@ -49,3 +49,14 @@ if __name__ == '__main__':
         # print(prod_name.text)
         prod_list_adding.append(prod_name.text)
         button.click()
+
+    try:
+        wait = WebDriverWait(driver, 10)
+        wait.until(EC.alert_is_present)
+        alert = driver.switch_to.alert
+        assert "You double clicked me!!!, You got to be kidding me" == alert.text
+        alert.accept()
+    except:
+        print("Pls double-click quickly!")
+    finally:
+        print("PASS!")
