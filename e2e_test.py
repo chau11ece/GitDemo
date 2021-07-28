@@ -35,6 +35,24 @@ def count_email_domain_v1p0():
     return mail_values
 
 
+def count_email_domain_v2():
+    domain_count = collections.defaultdict(lambda: 0)
+    with open('mails.txt', 'r') as f:
+        text = f.readlines()
+        for line in text:
+            domain = line.split('@')[-1]
+            domain_count[domain] += 1
+
+
+def count_email_domain_v3():
+    email_list = []
+    with open('mails.txt', 'r') as f:
+        text = f.read().split('\n')
+        email_list.append(email for email in text)
+
+    return email_list
+
+
 for product in products:
     prod_name = product.find_element_by_xpath("div/h4/a").text
     # print(prod_name)

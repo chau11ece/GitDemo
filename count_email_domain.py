@@ -41,3 +41,11 @@ def count_email_domain_v3():
 
 if __name__ == '__main__':
     print(random_char(7) + '@gmail.com')
+    prod_list_adding = []
+    prod_list_added = []
+
+    for button in buttons:
+        prod_name = button.find_element_by_xpath("parent::div/parent::div/h4")
+        # print(prod_name.text)
+        prod_list_adding.append(prod_name.text)
+        button.click()
