@@ -1,3 +1,6 @@
+import collections
+import re
+
 from selenium.webdriver.common.by import By
 from selenium import webdriver
 import time
@@ -19,13 +22,25 @@ print(len(products))
 print("Hello world")
 print("Update scripts")
 
+
+# Done few more steps
+
+def count_email_domain_v1p0():
+    with open('emails.text') as f:
+        text = f.read()
+
+    domains = re.findall(r'@(.*)$', text, re.MULTILINE)
+    mail_values = collections.Counter(domains)
+    # Outputs example: Counter({'gmail.com':4, 'yahoo.com':3})
+    return mail_values
+
+
 for product in products:
     prod_name = product.find_element_by_xpath("div/h4/a").text
     # print(prod_name)
     if prod_name == 'Blackberry':
         # Add item into cart
         product.find_element_by_xpath("div/button").click()
-
 
 driver.find_element_by_css_selector("a[class*='btn-primary'").click()
 driver.find_element_by_css_selector("button.btn-success").click()
