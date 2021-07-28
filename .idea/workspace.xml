@@ -2,14 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a73f8a5-72d6-4c02-9400-e4ac757df885" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/child_window.py" beforeDir="false" afterPath="$PROJECT_DIR$/child_window.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/count_email_domain.py" beforeDir="false" afterPath="$PROJECT_DIR$/count_email_domain.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/e2e_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/e2e_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pyTestsDemo/logging/LoggingData.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pyTestsDemo/logging/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -66,6 +73,17 @@
       <updated>1627402662581</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
